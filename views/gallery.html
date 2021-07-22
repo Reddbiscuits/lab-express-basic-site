@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expressly Expresive</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navBar">
+        <img class="logo" src="/images/Logo.jpeg" alt="logo" />
+        <nav>
+          <ul>
+            <li><a href="/index"> Home </a></li>
+            <li><a href="/about"> About Me </a></li>
+            <li><a href="/customers"> Customers </a></li>
+            <li><a href="/gallery"> Galery </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div style="text-align: center">
+      <h2>Tabbed Image Gallery</h2>
+      <p>Click on the images below:</p>
+    </div>
+    <!-- The grid: four columns -->
+    <div class="row">
+      <div class="column">
+        <img src="/images/inubiz1.jpeg" alt="" style="width: 100%" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img src="/images/inubiz2.jpeg" alt="" style="width: 100%" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img src="/images/trane.jpeg" alt="" style="width: 100%" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img src="/images/churchSky.jpeg" alt="" style="width: 100%" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img src="/images/sunset.jpg" alt="" style="width: 100%" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img src="/images/cubes.jpeg" alt="" style="width: 100%" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img src="/images/lena1.jpeg" alt="" style="width: 100%" onclick="myFunction(this);" />
+      </div>
+      <div class="column">
+        <img src="/images/lena2.jpeg" alt="" style="width: 100%" onclick="myFunction(this);" />
+      </div>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="imgContainer">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width: 50%" />
+
+      <!-- Image text -->
+      <div id="imgtext"></div>
+    </div>
+    <script src="scripts/gallery.js"></script>
+  </body>
+</html>
